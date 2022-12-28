@@ -1,0 +1,5 @@
+package eddscatalog.services;
+
+public class CategoryService {
+
+}
