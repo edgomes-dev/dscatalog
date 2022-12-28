@@ -1,0 +1,5 @@
+package eddscatalog.resources.exceptions;
+
+public class StandardError {
+
+}

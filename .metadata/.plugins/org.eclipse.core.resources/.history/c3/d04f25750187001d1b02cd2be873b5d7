@@ -1,0 +1,13 @@
+package eddscatalog.resources.exceptions;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+import jakarta.persistence.EntityNotFoundException;
+
+@ControllerAdvice
+public class ResourceExceptionHandler {
+	public ResponseEntity<StandardError> entityNotFound(EntityNotFoundException exception, HttpServeRequest request) {
+		
+	}
+}
