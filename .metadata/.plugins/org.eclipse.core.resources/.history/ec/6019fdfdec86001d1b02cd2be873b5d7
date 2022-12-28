@@ -1,0 +1,5 @@
+package eddscatalog.dto;
+
+public class CategoryDTO {
+
+}
