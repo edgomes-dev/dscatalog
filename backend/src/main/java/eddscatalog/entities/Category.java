@@ -1,6 +1,7 @@
 package eddscatalog.entities;
 
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.Objects;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,6 +16,7 @@ public class Category implements Serializable {
 	@GeneratedValue( strategy = GenerationType.IDENTITY )
 	private Long id;
 	private String name;
+	private Instant created_At;
 	
 	public Category() {}
 	
@@ -56,6 +58,14 @@ public class Category implements Serializable {
 			return false;
 		Category other = (Category) obj;
 		return Objects.equals(id, other.id);
+	}
+
+	public Instant getCreated_At() {
+		return created_At;
+	}
+
+	public void setCreated_At(Instant created_At) {
+		this.created_At = created_At;
 	}
 	
 	

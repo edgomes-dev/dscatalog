@@ -1,0 +1,5 @@
+package eddscatalog.entities;
+
+public class Product {
+
+}
