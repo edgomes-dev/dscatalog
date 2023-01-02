@@ -1,0 +1,5 @@
+package eddscatalog.repositories;
+
+public interface ProductRepository {
+
+}
